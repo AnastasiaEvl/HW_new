@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <body onclick ="func(event)">
+   
+
+    <img src="images/world.gif" >
+    <script>
+
+        function func(e){
+            
+            if ( e.x >=900 && e.x <=1000 && e.y >= 160 && e.y <= 200){
+                window.open("london.html",null, "width=1280, height=848");
+            }else if( e.x >= 900 && e.x <= 1900 && e.y >= 250 && e.y <= 300){
+                window.open("tokio.html", null, "width=1280, height=848"); 
+            }else if( e.x >= 530 && e.x <= 700 && e.y >= 240 && e.y <= 260){
+                window.open("ny.html", null, "width=1280, height=848"); 
+            }else {
+                alert("Нажмите на один из трех городов: Лондон, Токио, Нью-Йорк")
+            };
+        }
+    </script>
+</body>
+</html>
